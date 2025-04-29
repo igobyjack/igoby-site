@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header-content a {
+    color: inherit;
+    text-decoration: underline dotted;
+    margin-left: 275px; 
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    background: transparent;
+}
+
+.main-content a {
+    color: #66b3ff; /* Light blue */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.project-block {
+    background: #232323;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 480px; /* Set a minimum height for all blocks */
+}
+
+.project-block h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+}
+
+.project-block img {
+    display: block;
+    margin: 0 auto 18px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-block a {
+    color: #66b3ff;
+    text-decoration: underline dotted;
+    font-weight: bold;
+    margin-top: auto; 
+    display: block;
+    text-align: center;
+    min-height: 48px; 
+}

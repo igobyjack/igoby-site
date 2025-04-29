@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas#simulationCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: block;
+}
+
+.center-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.social-links,
+.social-links a,
+.social-links a img {
+    pointer-events: auto; /* re-enable pointer events for icons */
+}
+
+.social-links a {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.social-links a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    background: transparent;
+}
+
+
+.footer{
+  text-align: center;
+}

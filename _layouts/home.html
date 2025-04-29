@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-section">
+    <canvas id="simulationCanvas"></canvas>
+    <div class="center-content">
+      <h1>Jack Chubick</h1>
+      <img src="/assets/images/laserpfp.png" alt="Profile Picture" class="profile-pic">
+      <div class="social-links">
+        <a href="https://github.com/igobyjack" target="_blank" rel="noopener">
+          <img src="/assets/icons/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/jack-chubick-324286251/" target="_blank" rel="noopener">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="projects" target="_self">
+          <img src="/assets/icons/projects.png" alt="Projects">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/threebody.js"></script>
+  <div class="main-content">
+    {{ content }}
+  </div>
+  <br>
+  <footer class="footer">
+    <hr>
+    <p>&copy; 2025 Jack Chubick. All rights reserved.</p>
+    <p>Contact me at jachubick@gmail.com</p>
+  </footer>
+</body>
+</html>
