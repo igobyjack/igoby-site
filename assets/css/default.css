@@ -7,10 +7,15 @@ body {
     overflow-x: hidden;
 }
 
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
 .header-content a {
     color: inherit;
     text-decoration: underline dotted;
-    margin-left: 275px; 
 }
 
 .main-content {
