@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.header-content a {
+    color: inherit;
+    text-decoration: underline dotted;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    background: transparent;
+}
+
+.main-content a {
+    color: #66b3ff; /* Light blue */
+}
+
+.footer{
+    text-align: center;
+  }
+
+  
