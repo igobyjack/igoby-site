@@ -6,6 +6,16 @@ function resizeCanvas() {
     canvas.height = window.innerHeight;
 }
 
+const debounce = (func, delay) => {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => func(...args), delay);
+    };
+};
+
+window.addEventListener('resize', debounce(resizeCanvas, 100));
+
 resizeCanvas();
 
 const centerX = canvas.width / 2;
@@ -49,8 +59,6 @@ const masses = [
         isDragging: false
     }
 ];
-
-window.addEventListener('resize', resizeCanvas);
 
 const G = 0.3; 
 
@@ -209,7 +217,7 @@ canvas.addEventListener('mousedown', (event) => {
 });
 
 document.getElementById('reset-button').addEventListener('click', () => {
-    location.reload(); // reloads the page to reset the simulation
+    location.reload();
 });
 
 animate();
