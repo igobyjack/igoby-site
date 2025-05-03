@@ -208,8 +208,8 @@ canvas.addEventListener('mousedown', (event) => {
     }
 });
 
-// document.getElementById('reset-button').addEventListener('click', () => {
-//     location.reload(); // reloads the page to reset the simulation
-// });
+document.getElementById('reset-button').addEventListener('click', () => {
+    location.reload(); // reloads the page to reset the simulation
+});
 
 animate();

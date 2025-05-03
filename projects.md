@@ -14,7 +14,7 @@ title: What I've done
 
 <div class="project-block">
     <h2>Neptune Lawncare Project</h2>
-    <img src="assets/images/Neptune.png" alt="Neptune Lawncare" width="100%" height="auto">
+    <img src="assets/images/neptune/Neptunesensor.png" alt="Neptune Lawncare" width="100%" height="auto">
     <a href="projects/Neptune.html">Project Page</a>
 </div>
 
