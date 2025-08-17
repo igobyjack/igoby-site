@@ -10,6 +10,15 @@ theme:
 plugins:
   - jekyll-feed
 
+# Add MIME type support for video files
+include:
+  - assets
+
+# Serve static files properly
+webrick:
+  headers:
+    "Access-Control-Allow-Origin": "*"
+
 
 
 # exclude:

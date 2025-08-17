@@ -6,22 +6,27 @@ title: What I've done
 ---
 <br>
 
-# Projects
+# My Stuff
 
-<br>
 
 <div class="projects-grid">
-
-<div class="project-block">
-    <h2>Neptune Lawncare Project</h2>
-    <img src="assets/images/neptune/Neptunesensor.png" alt="Neptune Lawncare" width="100%" height="auto">
-    <a href="projects/Neptune.html">Project Page</a>
-</div>
 
 <div class="project-block">
     <h2>CMBverse</h2>
     <img src="assets\images\Dl_Neff_damping.gif" alt="CMB Variation gif" width="100%" height="auto">
     <a href="projects/CMBvar.html">Project Page</a>
+</div>
+
+<div class="project-block">
+    <h2>Balancer Robot</h2>
+    <img src="assets\images\pidbot\bennyhimself.jpeg" alt="Balance Bot" width="100%" height="auto">
+    <a href="projects/Balance_Bot.html">Project Page</a>
+</div>
+
+<div class="project-block">
+    <h2>Neptune Lawncare Project</h2>
+    <img src="assets/images/neptune/Neptunesensor.png" alt="Neptune Lawncare" width="100%" height="auto">
+    <a href="projects/Neptune.html">Project Page</a>
 </div>
 
 <div class="project-block">
@@ -42,24 +47,6 @@ title: What I've done
     <a href="https://github.com/igobyjack/Discord-Stock-Exchange">https://github.com/igobyjack/Discord-Stock-Exchange</a>
 </div>
 
-<div class="project-block">
-    <h2>Turtle Craft (WIP)</h2>
-    <img src="assets/images/turtle.png" alt="turtle" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/turtle-craft">https://github.com/igobyjack/turtle-craft</a>
 </div>
-
-</div>
-
-<br>
-
----
-
-<br>
-
-# Research
-
-<br>
-
-Coming soon...
 
 <br>
