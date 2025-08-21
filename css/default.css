@@ -77,6 +77,10 @@ body {
     min-height: 48px; 
 }
 
+.research-block {
+    text-align: center;
+}
+
 .footer{
     text-align: center;
   }
