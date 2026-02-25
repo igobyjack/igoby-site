@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What I've done
+title: My Projects
 ---
 
 ---
