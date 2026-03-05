@@ -42,9 +42,9 @@ title: My Projects
 </div>
 
 <div class="project-block">
-    <h2>Discord Stock Exchange</h2>
-    <img src="assets/images/DSE.png" alt="discord stock exchange" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/Discord-Stock-Exchange">https://github.com/igobyjack/Discord-Stock-Exchange</a>
+    <h2>C-PU</h2>
+    <img src="assets/images/cpu.png" alt="C-PU" width="100%" height="auto">
+    <a href="https://github.com/igobyjack/C-PU">https://github.com/igobyjack/C-PU</a>
 </div>
 
 </div>
