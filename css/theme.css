@@ -1,0 +1,93 @@
+:root {
+    color-scheme: dark;
+    --page-background: #222;
+    --text-color: #fff;
+    --link-color: #66b3ff;
+    --card-background: #232323;
+    --control-background: rgba(34, 34, 34, 0.82);
+    --control-border: rgba(255, 255, 255, 0.2);
+    --control-shadow: rgba(0, 0, 0, 0.24);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --page-background: #f6f4ef;
+    --text-color: #202124;
+    --link-color: #075ea8;
+    --card-background: #fff;
+    --control-background: rgba(255, 255, 255, 0.88);
+    --control-border: rgba(32, 33, 36, 0.18);
+    --control-shadow: rgba(32, 33, 36, 0.16);
+}
+
+body {
+    background: var(--page-background);
+    color: var(--text-color);
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.main-content a,
+.project-block a {
+    color: var(--link-color);
+}
+
+.project-block {
+    background: var(--card-background);
+    transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    place-items: center;
+    color: var(--text-color);
+    background: var(--control-background);
+    border: 1px solid var(--control-border);
+    border-radius: 50%;
+    box-shadow: 0 4px 16px var(--control-shadow);
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 180ms ease, color 180ms ease, transform 150ms ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--link-color);
+    outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+    width: 22px;
+    height: 22px;
+}
+
+.theme-toggle__sun,
+:root[data-theme="light"] .theme-toggle__moon {
+    display: none;
+}
+
+:root[data-theme="light"] .theme-toggle__sun {
+    display: block;
+}
+
+:root[data-theme="light"] .social-links img,
+:root[data-theme="light"] #refresh-icon {
+    filter: invert(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    .project-block,
+    .theme-toggle {
+        transition: none;
+    }
+}

@@ -12,9 +12,27 @@ title: My Projects
 <div class="projects-grid">
 
 <div class="project-block">
+    <h2>Atlas Autonomous Truck</h2>
+    <img src="assets\images\atlas\platform_complete.png" alt="truck picture" width="100%" height="auto">
+    <a href="projects/Atlas.html">Project Page</a>
+</div>
+
+<div class="project-block">
     <h2>CMBverse</h2>
     <img src="assets\images\Dl_Neff_damping.gif" alt="CMB Variation gif" width="100%" height="auto">
     <a href="projects/CMBvar.html">Project Page</a>
+</div>
+
+<div class="project-block">
+    <h2>MNIST Scratch Neural Net</h2>
+    <img src="assets/images/scratchnet.png" alt="neural net prediction" width="100%" height="auto">
+    <a href="https://github.com/igobyjack/scratch-net">https://github.com/igobyjack/scratch-net</a>
+</div>
+
+<div class="project-block">
+    <h2>C-PU</h2>
+    <img src="assets/images/cpu.png" alt="C-PU" width="100%" height="auto">
+    <a href="https://github.com/igobyjack/C-PU">https://github.com/igobyjack/C-PU</a>
 </div>
 
 <div class="project-block">
@@ -29,23 +47,6 @@ title: My Projects
     <a href="projects/Neptune.html">Project Page</a>
 </div>
 
-<div class="project-block">
-    <h2>MNIST Scratch Neural Net</h2>
-    <img src="assets/images/scratchnet.png" alt="neural net prediction" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/scratch-net">https://github.com/igobyjack/scratch-net</a>
-</div>
-
-<div class="project-block">
-    <h2>Monte-Carlo pi solver</h2>
-    <img src="assets/images/pi_solver_monte-carlo.gif" alt="monte carlo pi solving" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/monte-carlo-pi">https://github.com/igobyjack/monte-carlo-pi</a>
-</div>
-
-<div class="project-block">
-    <h2>C-PU</h2>
-    <img src="assets/images/cpu.png" alt="C-PU" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/C-PU">https://github.com/igobyjack/C-PU</a>
-</div>
 
 </div>
 

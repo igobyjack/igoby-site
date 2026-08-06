@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    } catch (error) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  </script>
 </head>
 <header>
   <div class="header-content">
@@ -11,19 +21,23 @@
     <h3><a href="index.html">Jack Chubick</a></h3>
 </header>
 <body>
+  <button class="theme-toggle" type="button" aria-label="Switch color theme">
+    <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
+    <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A9 9 0 0 1 8.5 3.5a9 9 0 1 0 12 12Z" fill="currentColor"/></svg>
+  </button>
   <div class="main-content">
     {{ content }}
   </div>
 
   <footer class="footer">
     <hr>
-    <p>&copy; 2025 Jack Chubick. All rights reserved.</p>
-    <p>Contact me at jachubick [@] gmail.com</p>
+    <p>Contact me at jachubick [@] utexas.edu</p>
   </footer>
 
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script src="/assets/js/theme.js"></script>
 </body>
 </html>
