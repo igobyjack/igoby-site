@@ -3,7 +3,8 @@
     --page-background: #222;
     --text-color: #fff;
     --link-color: #66b3ff;
-    --card-background: #232323;
+    --card-background: #2d2d2d;
+    --card-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.09), 0 4px 14px rgba(0, 0, 0, 0.2);
     --control-background: rgba(34, 34, 34, 0.82);
     --control-border: rgba(255, 255, 255, 0.2);
     --control-shadow: rgba(0, 0, 0, 0.24);
@@ -15,6 +16,7 @@
     --text-color: #202124;
     --link-color: #075ea8;
     --card-background: #fff;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --control-background: rgba(255, 255, 255, 0.88);
     --control-border: rgba(32, 33, 36, 0.18);
     --control-shadow: rgba(32, 33, 36, 0.16);
@@ -33,6 +35,7 @@ body {
 
 .project-block {
     background: var(--card-background);
+    box-shadow: var(--card-shadow);
     transition: background-color 180ms ease, box-shadow 180ms ease;
 }
 

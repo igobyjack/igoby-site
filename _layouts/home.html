@@ -22,22 +22,24 @@
     <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A9 9 0 0 1 8.5 3.5a9 9 0 1 0 12 12Z" fill="currentColor"/></svg>
   </button>
   <div class="hero-section">
-    <canvas id="simulationCanvas"></canvas>
-    <button id="reset-button">
-      <img src="assets/icons/refresh.png" alt="Refresh" id="refresh-icon">
-    </button>
+    <canvas id="simulationCanvas" role="img" aria-label="Interactive three-body gravity simulation. Drag a body to move it."></canvas>
+    <div class="simulation-controls" role="group" aria-label="Simulation controls">
+      <button id="pause-button" type="button" aria-label="Pause simulation">Pause</button>
+      <button id="reset-button" type="button" aria-label="Reset simulation">Reset</button>
+    </div>
+    <p class="simulation-hint">Drag the bodies · Scroll to explore</p>
     <div class="center-content">
       <h1>Jack Chubick</h1>
-      <img src="/assets/images/laserpfp.png" alt="Profile Picture" class="profile-pic">
+      <img src="/assets/images/profile/laserpfp.png" alt="Profile Picture" class="profile-pic">
       <div class="social-links">
+        <a href="/projects.html" target="_self">
+          <img src="/assets/icons/projects.png" alt="Projects">
+        </a>
         <a href="https://github.com/igobyjack" target="_blank" rel="noopener">
           <img src="/assets/icons/github.png" alt="GitHub">
         </a>
         <a href="https://www.linkedin.com/in/jack-chubick-324286251/" target="_blank" rel="noopener">
           <img src="/assets/icons/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="/projects.html" target="_self">
-          <img src="/assets/icons/projects.png" alt="Projects">
         </a>
       </div>
     </div>
@@ -49,7 +51,7 @@
   <br>
   <footer class="footer">
     <hr>
-    <p>Contact me at jachubick [@] utexas.edu</p>
+    <p>Contact me at jachubick [@] gmail.com</p>
   </footer>
 
   <script>

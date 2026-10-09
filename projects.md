@@ -12,38 +12,38 @@ title: My Projects
 <div class="projects-grid">
 
 <div class="project-block">
+    <h2>TREL</h2>
+    <img src="/assets/images/trel/Engine_1.png" alt="engine picture" width="100%" height="auto">
+    <a href="projects/trel.html">Project Page</a>
+</div>
+
+<div class="project-block">
     <h2>Atlas Autonomous Truck</h2>
-    <img src="assets\images\atlas\platform_complete.png" alt="truck picture" width="100%" height="auto">
+    <img src="/assets/images/atlas/platform_complete.png" alt="truck picture" width="100%" height="auto">
     <a href="projects/Atlas.html">Project Page</a>
 </div>
 
 <div class="project-block">
     <h2>CMBverse</h2>
-    <img src="assets\images\Dl_Neff_damping.gif" alt="CMB Variation gif" width="100%" height="auto">
+    <img src="/assets/images/cmbverse/Dl_Neff_damping.gif" alt="CMB Variation gif" width="100%" height="auto">
     <a href="projects/CMBvar.html">Project Page</a>
 </div>
 
 <div class="project-block">
     <h2>MNIST Scratch Neural Net</h2>
-    <img src="assets/images/scratchnet.png" alt="neural net prediction" width="100%" height="auto">
+    <img src="/assets/images/scratch-net/scratchnet.png" alt="neural net prediction" width="100%" height="auto">
     <a href="https://github.com/igobyjack/scratch-net">https://github.com/igobyjack/scratch-net</a>
 </div>
 
 <div class="project-block">
-    <h2>C-PU</h2>
-    <img src="assets/images/cpu.png" alt="C-PU" width="100%" height="auto">
-    <a href="https://github.com/igobyjack/C-PU">https://github.com/igobyjack/C-PU</a>
-</div>
-
-<div class="project-block">
     <h2>Balancer Robot</h2>
-    <img src="assets\images\pidbot\bennyhimself.jpeg" alt="Balance Bot" width="100%" height="auto">
+    <img src="/assets/images/pidbot/bennyhimself.jpeg" alt="Balance Bot" width="100%" height="auto">
     <a href="projects/Balance_Bot.html">Project Page</a>
 </div>
 
 <div class="project-block">
     <h2>Neptune Lawncare Project</h2>
-    <img src="assets/images/neptune/Neptunesensor.png" alt="Neptune Lawncare" width="100%" height="auto">
+    <img src="/assets/images/neptune/Neptunesensor.png" alt="Neptune Lawncare" width="100%" height="auto">
     <a href="projects/Neptune.html">Project Page</a>
 </div>
 
@@ -58,7 +58,7 @@ title: My Projects
 
 <div class="research-block">
     <h2>Optimal Multi-Spacecraft Refueling Planning for Cislunar Operations</h2>
-    <img src="assets/images/cislunarpaper.png" alt="orbit maps" width="50%">
+    <img src="/assets/images/cislunar/cislunarpaper.png" alt="orbit maps" width="50%">
     <h2>Abstract</h2>
     <p>As space activities expand within the cislunar environment,
     developing efficient refueling strategies becomes essential
@@ -84,7 +84,7 @@ title: My Projects
     planning achieves a 36% reduction in fuel consumption
     compared to a greedy strategy.</p>
 
-<h2><a href="assets/paper/Optimal_Multi-Spacecraft_Refueling_Planning_Cislunar.pdf" download>Link</a></h2>
+<h2><a href="/assets/papers/cislunar/Optimal_Multi-Spacecraft_Refueling_Planning_Cislunar.pdf" download>Link</a></h2>
 
 </div>
 

@@ -32,23 +32,46 @@ canvas#simulationCanvas {
     display: block;
 }
 
-#reset-button {
+.simulation-controls {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: transparent;
-    border: none;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    display: flex;
+    gap: 8px;
+}
+
+.simulation-controls button {
+    min-height: 44px;
+    padding: 0 14px;
+    color: var(--text-color);
+    background: var(--control-background);
+    border: 1px solid var(--control-border);
+    border-radius: 22px;
+    font: inherit;
+    font-size: 14px;
     cursor: pointer;
-    padding: 0;
 }
 
-#reset-button:hover {
-    background-color: #555;
+.simulation-controls button:hover {
+    border-color: var(--text-color);
 }
 
-#refresh-icon {
-    width: 50px;
-    height: 30px;
+.simulation-controls button:focus-visible {
+    outline: 3px solid var(--link-color);
+    outline-offset: 3px;
+}
+
+.simulation-hint {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.65;
+    pointer-events: none;
 }
 
 .center-content {

@@ -79,9 +79,8 @@ After tuning the PID values and applying filtering, the robot was able to balanc
 It isn’t perfect, if the batteries are low or the motors don’t respond quickly enough, it still tips over, and the design is very bottom heavy. But for a first attempt at using microcontrollers, sensors, and control theory together, it worked better than I expected. 
 
 <video controls preload="auto" width="100%" style="max-height:400px;" muted playsinline>
-    <source src="/assets/vids/balancer_demo.mp4" type="video/mp4">
-    <source src="/assets/vids/balancer_demo.webm" type="video/webm">
-    Your browser does not support the video tag. <a href="/assets/vids/balancer_demo.mp4">Download the video instead.</a>
+    <source src="/assets/videos/pidbot/balancer_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag. <a href="/assets/videos/pidbot/balancer_demo.mp4">Download the video instead.</a>
 </video>
 <br>
 
