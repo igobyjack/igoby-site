@@ -17,10 +17,10 @@ The Havoc-2 engine
 ## Igniter Development
 
 I’m owning the development a GOX/RP-1 torch igniter to initiate combustion in a LOX/RP-1 rocket engine. My work includes combustion chamber sizing, spark ignition requirements, propellant injection research, and mechanical attachment calculations. Using first-principles analysis and published NASA research, I’m evaluating how combustion performance, pressure loads, and potential failure modes influence the design. 
-
-<img src="/assets/images/trel/igniter.png" alt="complimentary filter" style="max-width:20%;">
-<br>
-Concept
+<figure style="margin:24px 0;">
+    <img src="/assets/images/trel/igniter.png" alt="igniter concept" loading="lazy" style="display:block; width:100%; max-width:200px; height:auto;">
+    <figcaption>Igniter concept</figcaption>
+</figure>
 
 <br>
 
@@ -51,6 +51,10 @@ I compared Barske and conventional centrifugal impeller configurations and am de
 <br>
 
 For this hotfire, I worked over our winter break, partially owning integration of the engine, interface with the test stand, and instrumentation. After the test, I partially owned data review and characterization of our performance metrics, and our overall learnings. 
+
+<figure style="margin:24px 0;">
+    <img src="/assets/images/trel/Thrust_curve.png" alt="thrust curve" loading="lazy" style="display:block; width:100%; max-width:800px; height:auto;">
+</figure>
 
 <br>
 
