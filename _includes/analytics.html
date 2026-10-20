@@ -1,0 +1,10 @@
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  // Jekyll knows the route at build time; preserve the visited URL separately.
+  window.va('pageview', {
+    route: {{ page.url | relative_url | jsonify }},
+    path: window.location.pathname
+  });
+</script>
+<!-- Send only the explicit page view above, avoiding an automatic duplicate. -->
+<script defer src="/_vercel/insights/script.js" data-disable-auto-track="1"></script>
