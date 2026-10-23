@@ -15,7 +15,7 @@ I worked with a team of 3 to build a website to provide an interactive way to ex
 
 <br>
 
-<img src="/assets/images/cmbverse/cmbsample1.png" alt="website sample" style="max-width:50%;">
+<img alt="CMBverse interface for exploring cosmological parameters" src="/assets/images/cmbverse/cmbsample1.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="1239">
 
 <br>
 
@@ -29,7 +29,7 @@ CLASS is effectively used to compute what the Cosmic Microwave Background power 
 
 <br>
 
-<img src="/assets/images/cmbverse/spectrum.png" alt="power spectrum" style="max-width:50%;">
+<img alt="Illustration of the cosmic microwave background" src="/assets/images/cmbverse/spectrum.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="700">
 
 <br>
 

@@ -62,18 +62,6 @@ canvas#simulationCanvas {
     outline-offset: 3px;
 }
 
-.simulation-hint {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    font-size: 12px;
-    opacity: 0.65;
-    pointer-events: none;
-}
-
 .center-content {
     position: absolute;
     top: 0;

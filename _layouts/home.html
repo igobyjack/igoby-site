@@ -6,6 +6,7 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/shared.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
   <script>
     try {
@@ -16,7 +17,8 @@
     }
   </script>
 </head>
-<body>
+<body class="home-page">
+  {% include navigation.html %}
   <button class="theme-toggle" type="button" aria-label="Switch color theme">
     <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
     <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A9 9 0 0 1 8.5 3.5a9 9 0 1 0 12 12Z" fill="currentColor"/></svg>
@@ -27,7 +29,6 @@
       <button id="pause-button" type="button" aria-label="Pause simulation">Pause</button>
       <button id="reset-button" type="button" aria-label="Reset simulation">Reset</button>
     </div>
-    <p class="simulation-hint">Drag the bodies · Scroll to explore</p>
     <div class="center-content">
       <h1>Jack Chubick</h1>
       <!-- <img src="/assets/images/profile/laserpfp.png" alt="Profile Picture" class="profile-pic"> -->
@@ -45,13 +46,13 @@
     </div>
   </div>
   <script src="/assets/js/threebody.js"></script>
-  <div class="main-content">
+  <main id="main-content" tabindex="-1" class="main-content">
     {{ content }}
-  </div>
+  </main>
   <br>
   <footer class="footer">
     <hr>
-    <p>Contact me at jachubick [@] gmail.com</p>
+    <p>Contact me at <a href="mailto:jachubick@gmail.com">jachubick@gmail.com</a></p>
   </footer>
 
   {% include analytics.html %}

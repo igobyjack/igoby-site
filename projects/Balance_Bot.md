@@ -29,9 +29,9 @@ The hardware for this project was relatively simple, and I tried to keep it that
 
 I designed the chassis in Onshape and had a friend print the base parts for me (Thanks Scott).
 
-<div style="display: flex; gap: 10px;">
-    <img src="/assets/images/pidbot/bennycad2.png" alt="robot cad" style="max-width:50%;">
-    <img src="/assets/images/pidbot/bennycad1.png" alt="robot cad" style="max-width:50%;">
+<div class="image-pair">
+    <img alt="Alternate CAD view of the balancing robot chassis" src="/assets/images/pidbot/bennycad2.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="987">
+    <img alt="CAD view of the balancing robot chassis" src="/assets/images/pidbot/bennycad1.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="1013">
 </div>
 
 ## PID Control 
@@ -50,7 +50,7 @@ Once the error is calculated, three things happen:
 
 The three results are summed into the PID value, which controls the motor speed. The sign of the value determines direction (leaning forward vs. backward).
 
-<img src="/assets/images/pidbot/PIDexplain.png" alt="robot cad" style="max-width:50%;">
+<img alt="PID controller diagram showing proportional, integral, and derivative feedback" src="/assets/images/pidbot/PIDexplain.webp" style="max-width:50%;" loading="lazy" decoding="async" width="871" height="357">
 
 Where it gets interesting is tuning the gain values.
 
@@ -70,7 +70,7 @@ The MPU6050 doesn’t give you absolute angle data. Instead, it measures changes
 
 This creates a useful pairing, that one measurement is good short term but degrades long term, while the other is the opposite. By combining them with a filter, you can reconcile their weaknesses into a much more accurate measurement of inclination.
 
-<img src="/assets/images/pidbot/filterequation.png" alt="complimentary filter" style="max-width:80%;">
+<img alt="Complementary filter equation combining gyroscope and accelerometer angle estimates" src="/assets/images/pidbot/filterequation.webp" style="max-width:80%;" loading="lazy" decoding="async" width="1400" height="112">
 
 ## Demonstration
 
@@ -78,7 +78,7 @@ After tuning the PID values and applying filtering, the robot was able to balanc
 
 It isn’t perfect, if the batteries are low or the motors don’t respond quickly enough, it still tips over, and the design is very bottom heavy. But for a first attempt at using microcontrollers, sensors, and control theory together, it worked better than I expected. 
 
-<video controls preload="auto" width="100%" style="max-height:400px;" muted playsinline>
+<video poster="/assets/images/pidbot/bennyhimself.webp" controls preload="none" width="100%" style="max-height:400px;" muted playsinline>
     <source src="/assets/videos/pidbot/balancer_demo.mp4" type="video/mp4">
     Your browser does not support the video tag. <a href="/assets/videos/pidbot/balancer_demo.mp4">Download the video instead.</a>
 </video>

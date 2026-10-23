@@ -7,7 +7,7 @@ layout: project
 
 # Atlas Autonomy
 
-<img src="/assets/images/atlas/platform_complete.png">
+<img alt="Atlas RC truck with onboard computer, wiring, and LiDAR" src="/assets/images/atlas/platform_complete.webp" loading="lazy" decoding="async" width="776" height="491">
 
 ## Overview
 
@@ -36,13 +36,13 @@ The control software is organized as a ROS 2 Python package. A receiver node rea
 
 Manual input acts as a high-priority, latched override. Any deliberate movement of the transmitter controls disables autonomous output and returns control to the operator. Autonomy remains locked out until it is explicitly re-armed through a ROS 2 service, and the service refuses to arm the vehicle while the operator is still moving the controls. Timeouts provide an additional fail-safe as stale autonomous commands or a lost manual-control link return the throttle to neutral and center the steering.
 
-<img src="/assets/images/atlas/wiring_diagram.drawio.png" alt="diagram" style="max-width:80%;">
+<img alt="Atlas wiring diagram connecting the Jetson, receiver, PWM controller, steering servo, ESC, and LiDAR" src="/assets/images/atlas/wiring_diagram.drawio.webp" style="max-width:80%;" loading="lazy" decoding="async" width="1088" height="601">
 
 *The power, control, and sensor connections between the Jetson, radio receiver, PWM controller, steering servo, ESC, and LiDAR.*
 
 ## Control Flow
 
-<img src="/assets/images/atlas/ROS2%20Stack%20Atlas.drawio.png" alt="diagram" style="max-width:80%;">
+<img alt="Atlas ROS 2 control flow from manual and autonomous commands to steering and throttle" src="/assets/images/atlas/ROS2%20Stack%20Atlas.drawio.webp" style="max-width:80%;" loading="lazy" decoding="async" width="661" height="791">
 
 
 The common Ackermann message interface keeps the hardware layer independent from any future planner or autonomy stack. A controller only needs to publish steering angle and speed requests; calibration, source selection, and actuator limits remain inside the driver.
@@ -64,18 +64,18 @@ The common Ackermann message interface keeps the hardware layer independent from
 
 For the demos, the I mainly used the onboard camera, LiDAR, RF2O laser odometry, slam_toolbox, and NAV2.
 
-<img src="/assets/images/atlas/map.png" alt="diagram" style="max-width:80%;">
+<img alt="LiDAR map of the Anna Hiss Gym mock apartment" src="/assets/images/atlas/map.webp" style="max-width:80%;" loading="lazy" decoding="async" width="1400" height="1008">
 
 LiDAR map of Anna Hiss Gym mock apartment
 
-<video controls preload="auto" width="100%" style="max-height:400px;" muted playsinline>
+<video poster="/assets/images/atlas/platform_complete.webp" controls preload="none" width="100%" style="max-height:400px;" muted playsinline>
     <source src="/assets/videos/atlas/atlas_onboard_vid.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
 onboard demo footage
 
-<video controls preload="auto" width="100%" style="max-height:400px;" muted playsinline>
+<video poster="/assets/images/atlas/map.webp" controls preload="none" width="100%" style="max-height:400px;" muted playsinline>
     <source src="/assets/videos/atlas/atlas_maxcam.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>

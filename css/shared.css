@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+html { scroll-padding-top: 24px; scrollbar-width: auto; }
+html::-webkit-scrollbar { display: block; }
+body { line-height: 1.65; }
+a { color: var(--link-color); text-underline-offset: 0.2em; }
+a:focus-visible, button:focus-visible, summary:focus-visible, .social-links a:focus-visible { outline: 3px solid var(--link-color); outline-offset: 5px; border-radius: 3px; }
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 30; padding: 10px 16px; background: var(--page-background); }
+.skip-link:focus { top: 16px; }
+.site-header { width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 80px 24px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.site-name { color: inherit; font-weight: 700; text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.site-header nav a { color: inherit; display: inline-flex; align-items: center; min-height: 44px; }
+.site-header [aria-current="page"] { text-decoration-thickness: 3px; }
+.home-page .site-header { position: absolute; top: 70px; left: 0; right: 0; z-index: 3; padding-right: 20px; }
+.main-content { width: 100%; }
+.main-content img, .main-content video { max-width: 100%; height: auto; }
+.project-content { max-width: 900px; overflow-wrap: anywhere; }
+.project-content > img { display: block; margin: 24px auto; }
+.project-content video { display: block; margin: 24px auto; max-height: 500px; background: #151515; }
+.project-content figure { margin: 24px 0; }
+.project-content figcaption { font-size: 0.9rem; margin-top: 8px; }
+.back-link { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 12px; }
+.image-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: center; }
+.image-pair img { width: 100%; }
+.footer { padding: 32px 20px; overflow-wrap: anywhere; }
+.footer hr { max-width: 1000px; opacity: 0.25; }
+@media (max-width: 640px) {
+  .site-header { align-items: flex-start; flex-direction: column; gap: 0; padding-top: 16px; }
+  .site-header nav { gap: 8px 18px; }
+  .home-page .site-header { top: 64px; }
+  .main-content { margin-top: 20px; padding: 0 20px; }
+  .project-content { font-size: 1rem; }
+  .project-content img { max-width: 100% !important; width: 100%; height: auto; }
+  .image-pair { grid-template-columns: 1fr; }
+  .hero-section, canvas#simulationCanvas, .center-content { height: 100svh; }
+}

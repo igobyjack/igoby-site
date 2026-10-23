@@ -1,0 +1,11 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  {% unless page.layout == 'home' %}
+  <a class="site-name" href="/">Jack Chubick</a>
+  {% endunless %}
+  <nav aria-label="Main navigation">
+    <a href="/"{% if page.layout == 'home' %} aria-current="page"{% endif %}>Home</a>
+    <a href="/projects.html"{% if page.url == '/projects.html' %} aria-current="page"{% endif %}>Projects</a>
+    <a href="/projects.html#research">Research</a>
+  </nav>
+</header>

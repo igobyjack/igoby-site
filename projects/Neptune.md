@@ -23,7 +23,7 @@ The system would consist of one or more buried moisture detectors connected to a
 
 <br>
 
-<img src="/assets/images/neptune/neptune_done.jpeg" alt="full system" style="max-width:50%;">
+<img alt="Assembled Neptune soil moisture monitoring prototype" src="/assets/images/neptune/neptune_done.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="1050">
 
 ## Hardware details
 
@@ -31,11 +31,11 @@ I used an arduino for processing the analogue data from the moisture sensor, a r
 
 <br>
 
-<img src="/assets/images/neptune/computercase.png" alt="computer cad" style="max-width:50%;">
+<img alt="CAD model of the Neptune computer enclosure" src="/assets/images/neptune/computercase.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1400" height="866">
 
 <br>
 
-<img src="/assets/images/neptune/sensorcutaway.png" alt="cad cutaway" style="max-width:50%;">
+<img alt="Cross section of the buried soil moisture sensor enclosure" src="/assets/images/neptune/sensorcutaway.webp" style="max-width:50%;" loading="lazy" decoding="async" width="853" height="1306">
 
 <br>
 
@@ -47,6 +47,6 @@ The arduino runs a C++ script, recieving the data from any sensors connected and
 
 <br>
 
-<img src="/assets/images/neptune/neptune.png" alt="web page" style="max-width:50%;">
+<img alt="Neptune dashboard with moisture history and watering guidance" src="/assets/images/neptune/neptune.webp" style="max-width:50%;" loading="lazy" decoding="async" width="1080" height="1294">
 
 <br>
